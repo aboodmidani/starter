@@ -1,15 +1,16 @@
 <template>
-  <div class="card bg-primary text-primary-content w-96">
-    <div class="card-body">
-      <h2 class="card-title">
-        <slot name="title">Card title!</slot>
-      </h2>
-      <p>
-        <ContentSlot :content="descriptionContent" />
-      </p>
-      <div class="card-actions justify-end">
-        <button class="btn">
-          <slot name="buttonText">Buy Now</slot>
+  <div class="hero min-h-screen" :style="`background-image: url(${imageUrl});`">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold">
+          <slot name="title">Hello there</slot>
+        </h1>
+        <p class="mb-5">
+          <ContentSlot :use="$slots.description" unwrap="p" />
+        </p>
+        <button class="btn btn-primary">
+          <slot name="buttonText">Get Started</slot>
         </button>
       </div>
     </div>
@@ -18,9 +19,10 @@
 
 <script setup>
 defineProps({
-  descriptionContent: {
+  imageUrl: {
     type: String,
-    default: 'If a dog chews shoes whose shoes does he choose?',
+    default:
+      "https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp",
   },
-})
+});
 </script>
