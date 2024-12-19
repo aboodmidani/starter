@@ -1,13 +1,13 @@
-type: page
-layout: default
-title: "Welcome to Our Website"
-seo:
-  title: "Our Amazing Site"
-  description: "Discover the best services with us."
-  keywords: "services, amazing, platform"
-sections:
-  - navbar
-  - hero
-  - twocolumnsection
-  - onewcolumnsection
-  - cards
+
+
+::Hero
+  title: "Welcome to Our Website"
+  descriptionContent: "Your journey starts here. Discover amazing things today!"
+  buttonText: "Explore Now"
+::
+
+::Card
+  title: "Exclusive Offer"
+  descriptionContent: "Get 50% off your first purchase!"
+  buttonText: "Shop Now"
+::

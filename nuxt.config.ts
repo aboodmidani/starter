@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: ['@nuxt/content', '@nuxthq/studio', '@nuxt/ui'],
-  css: ['~/css/tailwind.css'],
+  css: ['~/assets/css/tailwind.css'],
 
   routeRules: {
     '/': { prerender: true }
