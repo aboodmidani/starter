@@ -8,7 +8,17 @@ export default {
     "./content/**/*.yml",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#1E40AF", // Custom primary color
+        secondary: "#9333EA", // Custom secondary color
+        accent: "#F59E0B", // Custom accent color
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"], // Custom font for sans
+        serif: ["Merriweather", "serif"], // Custom font for serif
+      },
+    },
   },
   plugins: [require("daisyui")],
 };

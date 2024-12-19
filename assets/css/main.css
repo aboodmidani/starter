@@ -1,5 +1,6 @@
 body {
   @apply antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900;
+  background-color: #fff;
 }
 
 .dark .highlight-white {
