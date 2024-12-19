@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="hero min-h-screen"
-    :style="`background-image: url(${backgroundImage});`"
-  >
+  <div class="hero min-h-screen" :style="`background-image: url(${imageUrl});`">
     <div class="hero-overlay bg-opacity-60"></div>
     <div class="hero-content text-neutral-content text-center">
       <div class="max-w-md">
@@ -10,7 +7,7 @@
           <slot name="title">Hello there</slot>
         </h1>
         <p class="mb-5">
-          <ContentSlot :content="descriptionContent" />
+          <ContentSlot :use="$slots.description" unwrap="p" />
         </p>
         <button class="btn btn-primary">
           <slot name="buttonText">Get Started</slot>
@@ -21,13 +18,11 @@
 </template>
 
 <script setup>
-const backgroundImage = 'https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp'
-
-// You can use this prop to pass custom description content when using the component in markdown
 defineProps({
-  descriptionContent: {
+  imageUrl: {
     type: String,
-    default: 'Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.',
+    default:
+      "https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp",
   },
-})
+});
 </script>
