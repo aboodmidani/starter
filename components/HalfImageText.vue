@@ -1,23 +1,24 @@
 <template>
-  <section class="flex flex-col md:flex-row items-center gap-8 md:gap-16 py-16">
-    <div class="flex-1">
-      <img :src="image" alt="Section Image" class="rounded-lg shadow-lg" />
+  <div class="container mx-auto py-16 grid md:grid-cols-2 gap-8 items-center">
+    <img :src="image" alt="Section Image" class="w-full rounded-lg shadow-md" />
+    <div>
+      <h2 :class="theme.typography.heading" class="mb-4">{{ title }}</h2>
+      <p :class="theme.typography.base" class="mb-6">{{ description }}</p>
+      <a :href="buttonLink" :class="button.default.class">{{ buttonText }}</a>
     </div>
-    <div class="flex-1 text-center md:text-left">
-      <h2 class="text-3xl font-bold mb-4">{{ title }}</h2>
-      <p class="text-lg mb-6">{{ text }}</p>
-      <a :href="button.link" class="btn-primary">{{ button.text }}</a>
-    </div>
-  </section>
+  </div>
 </template>
 
 <script setup>
-const { data } = await useContent('section2');
-const { image, title, text, button } = data;
-</script>
+import { useAppConfig } from '#app';
 
-<style>
-.btn-primary {
-  @apply bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600;
-}
-</style>
+const { ui } = useAppConfig();
+const theme = ui.theme;
+const button = ui.components.button;
+
+const image = "/path-to-image.jpg";
+const title = "Why Choose Us?";
+const description = "We provide the best services to help you succeed.";
+const buttonText = "Learn More";
+const buttonLink = "/about";
+</script>

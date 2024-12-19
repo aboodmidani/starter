@@ -1,12 +1,26 @@
 <template>
-  <footer class="bg-gray-800 text-white py-6">
-    <div class="container mx-auto text-center text-sm">
-      {{ text }}
+  <footer :class="footer.wrapper">
+    <div class="container mx-auto text-center py-8">
+      <p class="mb-4">© 2024 My Nuxt App. All rights reserved.</p>
+      <ul class="flex justify-center space-x-4">
+        <li v-for="link in links" :key="link.label">
+          <a :href="link.href" :class="footer.top.container">
+            {{ link.label }}
+          </a>
+        </li>
+      </ul>
     </div>
   </footer>
 </template>
 
 <script setup>
-const { data } = await useContent('footer');
-const text = data.text;
+import { useAppConfig } from '#app';
+
+const { ui } = useAppConfig();
+const footer = ui.footer;
+
+const links = [
+  { href: "/privacy", label: "Privacy Policy" },
+  { href: "/terms", label: "Terms of Service" },
+];
 </script>

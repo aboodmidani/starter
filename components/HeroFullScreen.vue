@@ -1,16 +1,22 @@
 <template>
   <div
-    class="relative bg-cover bg-center h-screen flex items-center justify-center text-white"
-    :style="{ backgroundImage: `url(${background})` }"
+    :class="`relative bg-cover bg-center h-screen flex items-center justify-center text-white`"
+    :style="{ backgroundImage: `url(${background})`, color: theme.text }"
   >
     <div class="text-center">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">{{ title }}</h1>
-      <p class="text-lg md:text-2xl">{{ subtitle }}</p>
+      <h1 :class="theme.typography.heading">{{ title }}</h1>
+      <p :class="theme.typography.base">{{ subtitle }}</p>
     </div>
   </div>
 </template>
 
 <script setup>
-const { data } = await useContent('hero');
-const { title, subtitle, background } = data;
+import { useAppConfig } from '#app';
+
+const { ui } = useAppConfig();
+const theme = ui.theme.variables.light;
+
+const background = "/path-to-hero-image.jpg";
+const title = "Welcome to Our Website";
+const subtitle = "Discover amazing features and experience the best.";
 </script>

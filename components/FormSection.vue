@@ -1,38 +1,39 @@
 <template>
-  <section class="bg-white py-16">
-    <div class="container mx-auto max-w-xl">
-      <h2 class="text-3xl font-bold text-center mb-8">{{ title }}</h2>
-      <p class="text-center text-lg mb-12">{{ subtitle }}</p>
-      <form @submit.prevent="handleSubmit" class="space-y-6">
-        <div v-for="field in fields" :key="field.label">
-          <label class="block text-gray-700 mb-2">{{ field.label }}</label>
-          <input
-            v-if="field.type !== 'textarea'"
-            :type="field.type"
-            :placeholder="field.placeholder"
-            :required="field.required"
-            class="w-full border border-gray-300 rounded-lg p-3"
-          />
-          <textarea
-            v-else
-            :placeholder="field.placeholder"
-            :required="field.required"
-            class="w-full border border-gray-300 rounded-lg p-3"
-          ></textarea>
-        </div>
-        <button type="submit" class="btn-primary w-full">
-          {{ submit }}
-        </button>
-      </form>
-    </div>
-  </section>
+  <div class="container mx-auto py-16">
+    <h2 :class="theme.typography.heading" class="mb-8 text-center">
+      {{ formTitle }}
+    </h2>
+    <form class="max-w-lg mx-auto space-y-4">
+      <div v-for="field in fields" :key="field.name">
+        <label class="block mb-2 font-medium" :for="field.name">
+          {{ field.label }}
+        </label>
+        <input
+          :id="field.name"
+          :type="field.type"
+          :placeholder="field.placeholder"
+          :class="input.class"
+        />
+      </div>
+      <button type="submit" :class="button.default.class">
+        Submit
+      </button>
+    </form>
+  </div>
 </template>
 
 <script setup>
-const { data } = await useContent('form');
-const { title, subtitle, fields, submit } = data;
+import { useAppConfig } from '#app';
 
-function handleSubmit() {
-  alert('Form submitted!');
-}
+const { ui } = useAppConfig();
+const theme = ui.theme;
+const button = ui.components.button;
+const input = ui.components.input;
+
+const formTitle = "Contact Us";
+const fields = [
+  { name: "name", label: "Name", type: "text", placeholder: "Enter your name" },
+  { name: "email", label: "Email", type: "email", placeholder: "Enter your email" },
+  { name: "message", label: "Message", type: "textarea", placeholder: "Enter your message" },
+];
 </script>
