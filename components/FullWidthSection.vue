@@ -1,14 +1,12 @@
 <template>
-    <section class="full-width-section">
-      <slot />
-    </section>
-  </template>
-  
-  <style>
-  .full-width-section {
-    width: 100%;
-    padding: 2rem 0;
-    background: #f5f5f5;
-  }
-  </style>
-  
+  <section class="bg-gray-100 py-16">
+    <div class="container mx-auto">
+      <p class="text-center text-lg md:text-xl">{{ content }}</p>
+    </div>
+  </section>
+</template>
+
+<script setup>
+const { data } = await useContent('section1');
+const { content } = data;
+</script>

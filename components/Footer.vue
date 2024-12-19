@@ -1,15 +1,12 @@
 <template>
-    <footer class="footer">
-      <p>&copy; 2024 Your Company. All rights reserved.</p>
-    </footer>
-  </template>
-  
-  <style>
-  .footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: #333;
-    color: #fff;
-  }
-  </style>
-  
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center text-sm">
+      {{ text }}
+    </div>
+  </footer>
+</template>
+
+<script setup>
+const { data } = await useContent('footer');
+const text = data.text;
+</script>
