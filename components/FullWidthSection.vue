@@ -1,12 +1,17 @@
 <template>
-  <section class="bg-gray-100 py-16">
-    <div class="container mx-auto">
-      <p class="text-center text-lg md:text-xl">{{ content }}</p>
+  <section :class="bg + ' ' + textColor + ' py-12'">
+    <div class="text-center">
+      <h2 class="text-3xl font-semibold">{{ title }}</h2>
+      <p class="mt-4">{{ description }}</p>
     </div>
   </section>
 </template>
 
 <script setup>
-const { data } = await useContent('section1');
-const { content } = data;
+defineProps({
+  title: String,
+  description: String,
+  bg: String,
+  textColor: String,
+});
 </script>
