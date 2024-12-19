@@ -7,7 +7,7 @@
 ::
 
 ::Card
-  title: "Exclusive Offer"
-  descriptionContent: "Get 50% off your first purchase!"
-  buttonText: "Shop Now"
+  #title: "Exclusive Offer"
+  #descriptionContent: "Get 50% off your first purchase!"
+  #buttonText: "Shop Now"
 ::
