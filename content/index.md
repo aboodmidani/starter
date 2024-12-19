@@ -6,6 +6,7 @@ seo:
   description: "Discover the best services with us."
   keywords: "services, amazing, platform"
 sections:
+  - navbar
   - hero
   - twocolumnsection
   - onewcolumnsection
