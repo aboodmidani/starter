@@ -5,6 +5,28 @@
   imageUrl: "/path-to-image.jpg"
 ::
 
+  # Full Row Section
+  :::slot fullRowTitle
+  Custom Full Row Title
+  :::
+  :::slot fullRowDescription
+  Custom description for the full row section.
+  :::
+
+  # Two-Column Section
+  :::slot twoColumnTitle
+  Custom Two-Column Title
+  :::
+  :::slot twoColumnDescription
+  Custom description for the two-column section.
+  :::
+  :::slot twoColumnButton
+  Custom Button Text
+  :::
+  :::slot twoColumnImage
+  <img src="https://via.placeholder.com/300" alt="Custom Image" />
+  :::
+
 ::Carousel
 ::
 
