@@ -6,7 +6,7 @@ Your journey starts here. Discover amazing things today!
 #herobuttonText
 Explore Now
 #imageUrl
-/path-to-image.jpg
+![Custom Image](/path-to-image.jpg)
 ::
 
 ::Carousel
