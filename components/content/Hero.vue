@@ -4,13 +4,13 @@
     <div class="hero-content text-neutral-content text-center">
       <div class="max-w-md">
         <h1 class="mb-5 text-5xl font-bold text-white">
-          <slot name="title">Hello there</slot>
+          <slot name="herotitle">Hello there</slot>
         </h1>
         <p class="mb-5">
-          <ContentSlot :use="$slots.description" unwrap="p" />
+          <ContentSlot :use="$slots.herodescription" unwrap="p" />
         </p>
         <button class="btn btn-primary">
-          <slot name="buttonText">Get Started</slot>
+          <slot name="herobuttonText">Get Started</slot>
         </button>
       </div>
     </div>
