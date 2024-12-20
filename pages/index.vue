@@ -1,13 +1,6 @@
 <template>
   <div>
-    <!-- Hero Section -->
-    <Hero>
-      <slot />
-      <template #description>
-        <slot name="heroDescription" />
-      </template>
-    </Hero>
-
+    <Hero />
     <!-- Full Row Section -->
     <section class="w-full bg-gray-100 py-16 px-6">
       <div class="container mx-auto text-center">
@@ -49,19 +42,19 @@
         </div>
       </div>
     </section>
-
-    <!-- Card Section -->
     <section class="w-full bg-white py-16 px-6">
       <div class="container mx-auto">
-        <slot name="card" />
+        <Card />
       </div>
     </section>
-
-    <!-- Accordion Section -->
     <section class="w-full bg-gray-100 py-16 px-6">
       <div class="container mx-auto">
-        <slot name="accordion" />
+        <Accordion />
       </div>
     </section>
   </div>
 </template>
+
+<script>
+import Accordion from "~/components/content/Accordion.vue";
+</script>

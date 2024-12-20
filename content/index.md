@@ -1,16 +1,24 @@
 ::Hero
-Welcome to Our Site!
+herotitle: "Welcome to Our Website"
+herodescription: "Your journey starts here. Discover amazing things today!"
+herobuttonText: "Explore Now"
+imageUrl: "/path-to-image.jpg"
+::
 
-#heroDescription
-This is a description of the hero section. You can customize this text.
+::Carousel
+::
 
+::Card
+title: "Exclusive Offer"
+descriptionContent: "Get 50% off your first purchase!"
+buttonText: "Shop Now"
 ::
 
 #fullRowTitle
 Explore Our Full Row Section
 
 #fullRowDescription
-This section features a full-width layout with centered content.
+This section features a full-width layout with centered content. Use this section to highlight important information.
 
 #twoColumnTitle
 Discover Our Two-Column Layout
@@ -24,12 +32,5 @@ Get Started Today
 #twoColumnImage
 ![Custom Image](https://via.placeholder.com/300)
 
-#card
-<CustomCard>
-  <p>This is the content of the card slot. Add any custom HTML or Markdown here.</p>
-</CustomCard>
-
-#accordion
-<CustomAccordion>
-  <p>This is the content of the accordion slot. You can add collapsible content here.</p>
-</CustomAccordion>
+::Accordion
+::
