@@ -24,15 +24,15 @@ const props = defineProps({
     type: String,
     default: "https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp",
   },
-  title: {
+  herotitle: {
     type: String,
     default: "Hello there",
   },
-  description: {
+  herodescription: {
     type: String,
     default: "Your journey starts here. Discover amazing things today!",
   },
-  buttonText: {
+  herobuttonText: {
     type: String,
     default: "Get Started",
   },
