@@ -1,90 +1,35 @@
 ::Hero
-  herotitle: "Welcome to Our Website"
-  herodescription: "Your journey starts here. Discover amazing things today!"
-  herobuttonText: "Explore Now"
-  imageUrl: "/path-to-image.jpg"
+Welcome to Our Site!
+
+#heroDescription
+This is a description of the hero section. You can customize this text.
+
 ::
 
-  # Full Row Section
-  :::slot fullRowTitle
-  Custom Full Row Title
-  :::
-  :::slot fullRowDescription
-  Custom description for the full row section.
-  :::
+#fullRowTitle
+Explore Our Full Row Section
 
-  # Two-Column Section
-  :::slot twoColumnTitle
-  Custom Two-Column Title
-  :::
-  :::slot twoColumnDescription
-  Custom description for the two-column section.
-  :::
-  :::slot twoColumnButton
-  Custom Button Text
-  :::
-  :::slot twoColumnImage
-  <img src="https://via.placeholder.com/300" alt="Custom Image" />
-  :::
+#fullRowDescription
+This section features a full-width layout with centered content.
 
-::Carousel
-::
+#twoColumnTitle
+Discover Our Two-Column Layout
 
-::Card
-  title: "Exclusive Offer"
-  descriptionContent: "Get 50% off your first purchase!"
-  buttonText: "Shop Now"
-::
+#twoColumnDescription
+This layout splits content into two columns. You can easily customize each column with text or images.
 
-::FullRowSection
-  title: "Full Row Section"
-  description: "This is a full-width section with a centered container."
-::
+#twoColumnButton
+Get Started Today
 
-::TwoColumnSection
-  title: "Two-Column Section"
-  description: "This section splits the row into two columns. Add content to each side as needed."
-  buttonText: "Learn More"
-  imageUrl: "/path-to-image.jpg"
-::
+#twoColumnImage
+![Custom Image](https://via.placeholder.com/300)
 
-::Accordion
-::
+#card
+<CustomCard>
+  <p>This is the content of the card slot. Add any custom HTML or Markdown here.</p>
+</CustomCard>
 
-::AppConfig
-  ui:
-    primary: "indigo"
-    gray: "zinc"
-    variables:
-      light:
-        background: "var(--color-gray-50)"
-      dark:
-        background: "var(--color-gray-950)"
-    button:
-      rounded: "rounded-full"
-      default:
-        size: "md"
-        color: "black"
-    input:
-      rounded: "rounded-full"
-    header:
-      wrapper: "lg:!border-transparent bg-gray-50 dark:bg-gray-950"
-      links:
-        wrapper: "ring-1 ring-gray-200 dark:ring-gray-800 px-3 gap-x-0 rounded-full"
-        base: "py-2 px-4 font-medium transition-colors relative after:absolute after:-bottom-px after:inset-x-2 after:h-px after:rounded-full after:opacity-0 after:bg-gray-900 dark:after:bg-white after:transition-opacity"
-        active: "text-gray-900 dark:text-white after:opacity-100"
-        inactive: "text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
-    footer:
-      top:
-        wrapper: "border-t border-gray-200 dark:border-gray-800"
-        container: "py-8 lg:py-16"
-      bottom:
-        wrapper: "border-t border-gray-200 dark:border-gray-800"
-::
-
-::SEO
-  title: "Your Page Title"
-  description: "A brief description of your page for SEO."
-  keywords: "keyword1, keyword2, keyword3"
-  author: "Your Name"
-::
+#accordion
+<CustomAccordion>
+  <p>This is the content of the accordion slot. You can add collapsible content here.</p>
+</CustomAccordion>
