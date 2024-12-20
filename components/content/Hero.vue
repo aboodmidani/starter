@@ -1,16 +1,17 @@
+```components/content/Hero.vue
 <template>
   <div class="hero min-h-screen" :style="`background-image: url(${imageUrl});`">
     <div class="hero-overlay bg-opacity-60"></div>
     <div class="hero-content text-neutral-content text-center">
       <div class="max-w-md">
         <h1 class="mb-5 text-5xl font-bold text-white">
-          <slot name="title">Hello there</slot>
+          {{ title }}
         </h1>
         <p class="mb-5">
-          <ContentSlot :use="$slots.description" unwrap="p" />
+          {{ description }}
         </p>
         <button class="btn btn-primary">
-          <slot name="buttonText">Get Started</slot>
+          {{ buttonText }}
         </button>
       </div>
     </div>
@@ -18,11 +19,22 @@
 </template>
 
 <script setup>
-defineProps({
+const props = defineProps({
   imageUrl: {
     type: String,
-    default:
-      "https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp",
+    default: "https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp",
+  },
+  title: {
+    type: String,
+    default: "Hello there",
+  },
+  description: {
+    type: String,
+    default: "Your journey starts here. Discover amazing things today!",
+  },
+  buttonText: {
+    type: String,
+    default: "Get Started",
   },
 });
 </script>
