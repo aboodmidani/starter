@@ -4,7 +4,7 @@
     <div class="hero-content text-neutral-content text-center">
       <div class="max-w-md">
         <h1 class="mb-5 text-5xl font-bold text-white">
-          <slot name="herotitle">Hello there</slot>
+          <ContentSlot name="herotitle" />
         </h1>
         <p class="mb-5">
           <slot name="herodescription" unwrap="p"
