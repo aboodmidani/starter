@@ -1,17 +1,13 @@
 ::hero
 #herotitle
 Welcome to Our Website
-
 #herodescription
 Your journey starts here. Discover amazing things today!
-
 #herobuttonText
 Explore Now
-
 #imageUrl
 ![Custom Image](/path-to-image.jpg)
 ::
-
 
 ::carousel
 ::
