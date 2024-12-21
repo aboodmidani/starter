@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-gray-100 py-16 px-6">
+  <section id="first" class="w-full bg-gray-100 py-16 px-6">
     <div class="container mx-auto text-center">
       <h2 class="text-3xl font-bold text-gray-800">
         <slot name="fullRowTitle">Title</slot>

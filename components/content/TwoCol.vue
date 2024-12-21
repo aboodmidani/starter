@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-white py-16 px-6">
+  <section id="second" class="w-full bg-white py-16 px-6">
     <div
       class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
     >

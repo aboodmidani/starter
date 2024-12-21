@@ -12,21 +12,7 @@ Explore Now
 ![Custom Image](/path-to-image.jpg)
 ::
 
-::carousel
-::
-
-::card
-#title
-Exclusive Offer
-
-#descriptionContent
-Get 50% off your first purchase!
-
-#buttonText
-Shop Now
-::
-
-::fullRow
+::full-row
 #fullRowTitle
 TITLE
 
@@ -34,7 +20,7 @@ TITLE
 Desc
 ::
 
-::twoCol
+::two-col
 #twoColumnTitle
 Discover Our Two-Column Layout
 
