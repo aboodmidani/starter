@@ -83,8 +83,8 @@ export default defineAppConfig({
     },
   },
   navbar: {
-    heroText: 'Your Hero Text',
-    firstText: 'First Text',
-    secondText: 'Second Text'
+    heroText: "Home",
+    firstText: "First",
+    secondText: "Second"
   }
 });
