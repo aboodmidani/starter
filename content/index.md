@@ -10,7 +10,6 @@ Explore Now
 
 #imageUrl
 ![Custom Image](/path-to-image.jpg)
-
 ::
 
 ::carousel
@@ -25,7 +24,6 @@ Get 50% off your first purchase!
 
 #buttonText
 Shop Now
-
 ::
 
 ::fullRow
