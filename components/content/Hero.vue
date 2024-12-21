@@ -4,7 +4,7 @@
     <div class="hero-content text-neutral-content text-center">
       <div class="max-w-md">
         <h1 class="mb-5 text-5xl font-bold text-white">
-          <ContentSlot name="herotitle" unwrap="p" />
+          <ContentSlot :use="$slots.herotitle" unwrap="p">Test</ContentSlot>
         </h1>
         <p class="mb-5">
           <slot name="herodescription" unwrap="p"
