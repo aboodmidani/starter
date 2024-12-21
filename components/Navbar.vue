@@ -68,21 +68,10 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    heroText: {
-      type: String,
-      default: 'Home',
-    },
-    firstText: {
-      type: String,
-      default: 'Services',
-    },
-    secondText: {
-      type: String,
-      default: 'About Us',
-    },
-  },
-}
+<script setup lang="ts">
+defineProps<{
+  heroText: string
+  firstText: string
+  secondText: string
+}>()
 </script>
