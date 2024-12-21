@@ -69,9 +69,16 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
-  heroText: string
-  firstText: string
-  secondText: string
-}>()
+withDefaults(
+  defineProps<{
+    heroText: string;
+    firstText: string;
+    secondText: string;
+  }>(),
+  {
+    heroText: "Home",
+    firstText: "Services",
+    secondText: "About Us",
+  }
+);
 </script>
