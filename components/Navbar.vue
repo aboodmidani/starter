@@ -68,17 +68,21 @@
   </div>
 </template>
 
-<script setup lang="ts">
-withDefaults(
-  defineProps<{
-    heroText: string;
-    firstText: string;
-    secondText: string;
-  }>(),
-  {
-    heroText: "Home",
-    firstText: "Services",
-    secondText: "About Us",
-  }
-);
+<script>
+export default {
+  props: {
+    heroText: {
+      type: String,
+      default: 'Home',
+    },
+    firstText: {
+      type: String,
+      default: 'Services',
+    },
+    secondText: {
+      type: String,
+      default: 'About Us',
+    },
+  },
+}
 </script>
