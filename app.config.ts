@@ -82,4 +82,9 @@ export default defineAppConfig({
       orientation: "horizontal",
     },
   },
+  navbar: {
+    heroText: "Home",
+    firstText: "Services",
+    secondText: "About Us",
+  },
 });
