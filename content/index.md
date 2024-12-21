@@ -1,8 +1,4 @@
-::hero
-
----
-imageUrl: /path-to-image.jpg
----
+::Hero
 
 #herotitle
 Welcome to Our Website
@@ -12,6 +8,9 @@ Your journey starts here. Discover amazing things today!
 
 #herobuttonText
 Explore Now
+
+#imageUrl
+![Custom Image](/path-to-image.jpg)
 
 ::
 
