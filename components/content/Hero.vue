@@ -7,7 +7,12 @@
           <slot name="herotitle">Hello there</slot>
         </h1>
         <p class="mb-5">
-          <slot name="herodescription" unwrap="p" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem amet praesentium, quibusdam explicabo ipsam recusandae. Possimus praesentium alias porro, saepe doloremque animi reprehenderit tempore, facilis consequuntur, quos fugiat. Eveniet, harum.</slot>
+          <slot name="herodescription" unwrap="p"
+            >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
+            amet praesentium, quibusdam explicabo ipsam recusandae. Possimus
+            praesentium alias porro, saepe doloremque animi reprehenderit
+            tempore, facilis consequuntur, quos fugiat. Eveniet, harum.</slot
+          >
         </p>
         <button class="btn btn-primary">
           <slot name="herobuttonText">Get Started</slot>
