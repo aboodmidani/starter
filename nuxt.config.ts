@@ -7,6 +7,6 @@ export default defineNuxtConfig({
   routeRules: {
     "/": { prerender: true },
   },
-
+  components: true,
   compatibilityDate: "2024-12-19",
 });

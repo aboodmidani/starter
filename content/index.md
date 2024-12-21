@@ -1,5 +1,4 @@
-::Hero
-
+::hero
 #herotitle
 Welcome to Our Website
 
@@ -13,10 +12,11 @@ Explore Now
 ![Custom Image](/path-to-image.jpg)
 ::
 
-::Carousel
+
+::carousel
 ::
 
-::Card
+::card
 #title
 Exclusive Offer
 #descriptionContent
@@ -25,14 +25,14 @@ Get 50% off your first purchase!
 Shop Now
 ::
 
-::FullRow
+::fullRow
 #fullRowTitle
 TITLE
 #fullRowDescription
 Desc
 ::
 
-::TwoCol
+::twoCol
 #twoColumnTitle
 Discover Our Two-Column Layout
 #twoColumnDescription
@@ -43,5 +43,5 @@ Get Started Today
 ![Custom Image](https://via.placeholder.com/300)
 ::
 
-::Accordion
+::accordion
 ::
